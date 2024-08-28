@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    .img_block {
+      display: block;
+      height: 200px;
+      border: 10px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div>111</div>
+  <div id="userinfo" data-id="1">ssar</div>
+  <img class="img_block" src="https://picsum.photos/id/237/200/300">
+  <img class="img_block" src="https://picsum.photos/id/238/200/300">
+  <img src="https://picsum.photos/id/239/200/300">
+  <img src="https://picsum.photos/id/231/200/300">
+  <script>
+    let divDom = document.querySelector("#userinfo");
+    console.log(divDom.dataset.id);
+  </script>
+</body>
+
+</html>
